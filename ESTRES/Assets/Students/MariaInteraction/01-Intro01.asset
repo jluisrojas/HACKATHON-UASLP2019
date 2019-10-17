@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
-  m_Name: i01
+  m_Name: 01-Intro01
   m_EditorClassIdentifier: 
   context: 0
-  background: {fileID: 21300000, guid: 5927cc9a2b10147609882746316714b1, type: 3}
-  text: Hola como estas
-  playerTect: 
+  background: {fileID: 0}
+  text: "Hola Agust\xEDn, \xBFPor qu\xE9 no est\xE1s jugando?"
+  characterName: Pedro
   answers:
-  - Bien
-  - Mal
+  - Siguiente
   answersI:
-  - {fileID: 11400000, guid: 85563a46cba6f470c90b1ec72acc8d1d, type: 2}
-  - {fileID: 11400000, guid: a5ea70291410343fe8914a15fb9fb363, type: 2}
-  rightAnswer: 1
+  - {fileID: 11400000, guid: 96228995fb55741de83237bbd60c1fdf, type: 2}
+  rightAnswer: 0

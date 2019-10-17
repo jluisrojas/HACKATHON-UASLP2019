@@ -23,14 +23,17 @@ public class GameControl : MonoBehaviour
     }
 
     public void LoadScene(GameObject scene, int entryPoint) {
-        currentScene.SetActive(false);
+        //currentScene.SetActive(false);
+        currentScene.GetComponent<Scene>().camera.enabled = false;
+        currentScene.GetComponent<Scene>().camera.gameObject.SetActive(false);
         scene.SetActive(true);
         scene.GetComponent<Scene>().SetScene(entryPoint);
+        currentScene = scene;
     }
 
     public void LoadDialogue(TreeDialogue dialogue) {
         interactionPlayer.gameObject.SetActive(true);
-        
+
         movementBloqued = true;
         interactionMode = true;
 
