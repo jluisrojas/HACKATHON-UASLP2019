@@ -4,6 +4,7 @@ using UnityEngine;
 using Pathfinding;
 
 public enum Context {
+    Dialogo,
     Estres,
     Acoso
 }
@@ -32,8 +33,11 @@ public class Player : MonoBehaviour
     void Update() {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        if (Input.GetMouseButtonDown(0))
-            seeker.StartPath(this.transform.position,Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        if (!GameControl.instance.movementBloqued && Input.GetMouseButtonDown(0)) {
+            Camera camara = GameControl.instance.currentScene.GetComponent<Scene>().camera;
+            seeker.StartPath(this.transform.position,camara.ScreenToWorldPoint(Input.mousePosition));// + GameControl.instance.currentScene.transform.position);//, ArrivedDetination);
+            GameControl.instance.player.GetComponent<AIPath>().canMove = true;
+        }
     }
 
     // Update para el movimiento
@@ -41,6 +45,14 @@ public class Player : MonoBehaviour
     {
         if(!GameControl.instance.movementBloqued) {
             //rb.MovePosition(rb.position + movement*moveSpeed*Time.fixedDeltaTime);
+        }
+    }
+
+    void ArrivedDetination(Path p) {
+        if(student != null && p.IsDone()) {
+            if(!GameControl.instance.interactionMode) {
+                GameControl.instance.LoadDialogue(student.studentDialogue);
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class Scene : MonoBehaviour
 {
@@ -26,7 +27,14 @@ public class Scene : MonoBehaviour
             return;
         }
         
+        camera.gameObject.SetActive(true);
+        camera.enabled = true;
+        camera.tag = "MainCamera";
+        
+        GameControl.instance.player.GetComponent<AIPath>().canMove = false;
         GameControl.instance.player.transform.position = teletransporters[entryPoint].spawnPosition;
+        //GameControl.instance.player.GetComponent<Seeker>().StartPath(GameControl.instance.player.transform.position, teletransporters[entryPoint].spawnPosition);
+        //GameControl.instance.player.GetComponent<AIPath>().canMove = false;
     }
 
     void OnDrawGizmos() {

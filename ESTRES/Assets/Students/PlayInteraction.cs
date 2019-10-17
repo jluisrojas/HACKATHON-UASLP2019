@@ -9,6 +9,7 @@ public class PlayInteraction : MonoBehaviour
     public GameObject buttonA;
     public GameObject buttonB;
     public Text pregunta;
+    public Text characterName;
 
     public TreeDialogue currentDialogue;
     public Interaction currentInteraction;
@@ -42,9 +43,11 @@ public class PlayInteraction : MonoBehaviour
 
     public void SetInteraction(Interaction interaction) {
         if(interaction != null) {
+            fondo.sprite = interaction.background;
             currentInteraction = interaction;
 
             pregunta.text = interaction.text;
+            characterName.text = interaction.characterName;
 
             // Setup the botones
             if(interaction.answers.Length == 1) {

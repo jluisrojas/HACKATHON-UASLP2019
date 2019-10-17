@@ -10,16 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
-  m_Name: i01
+  m_Name: 05-Bien03
   m_EditorClassIdentifier: 
   context: 0
-  background: {fileID: 21300000, guid: 5927cc9a2b10147609882746316714b1, type: 3}
-  text: Hola como estas
-  playerTect: 
+  background: {fileID: 21300000, guid: 3e6e902b1cbbf4c1fbc693aeba033fe7, type: 3}
+  text: "David se distraer\xE1 un poco y volver\xE1 al estudio para as\xED poder pasar
+    el examen y no preocuparse tanto."
+  characterName: 
   answers:
-  - Bien
-  - Mal
-  answersI:
-  - {fileID: 11400000, guid: 85563a46cba6f470c90b1ec72acc8d1d, type: 2}
-  - {fileID: 11400000, guid: a5ea70291410343fe8914a15fb9fb363, type: 2}
-  rightAnswer: 1
+  - Fin
+  answersI: []
+  rightAnswer: 0

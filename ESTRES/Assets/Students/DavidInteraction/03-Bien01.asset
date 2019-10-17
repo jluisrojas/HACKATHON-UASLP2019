@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
+  m_Name: 03-Bien01
+  m_EditorClassIdentifier: 
+  context: 0
+  background: {fileID: 21300000, guid: 3bdc56d420e404561836d19fb2ee4d75, type: 3}
+  text: "Si, creo que tienes raz\xF3n, ya me siento algo cansado, pero \xBFQu\xE9
+    puedo hacer para relajarme?"
+  characterName: David
+  answers:
+  - "Sal y distr\xE1ete un rato, la actividad f\xEDsica y hacer ejercicio..."
+  - "Olv\xEDdate del examen y sal a jugar"
+  answersI:
+  - {fileID: 11400000, guid: ebd6a9b226e234215878889c77cbf5a3, type: 2}
+  - {fileID: 11400000, guid: 917f56c1686764289945d7c360ac4a29, type: 2}
+  rightAnswer: 0
