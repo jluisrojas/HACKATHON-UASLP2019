@@ -9,6 +9,7 @@ public class Student : MonoBehaviour
 
     // Reference to the player
     public GameObject player;
+    public TreeDialogue studentDialogue;
 
 
     // Start is called before the first frame update
@@ -22,7 +23,9 @@ public class Student : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(!GameControl.instance.interactionMode && playerInArea && Input.GetKeyDown(KeyCode.Space)) {
+            GameControl.instance.LoadDialogue(studentDialogue);
+        }
     }
 
     // Se utiliza un courutina para no forzar tanto al CPU en el update

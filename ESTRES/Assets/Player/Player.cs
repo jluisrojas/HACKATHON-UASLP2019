@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Context {
+    Estres,
+    Acoso
+}
+
 public class Player : MonoBehaviour
 {
     public float moveSpeed = 5f;
