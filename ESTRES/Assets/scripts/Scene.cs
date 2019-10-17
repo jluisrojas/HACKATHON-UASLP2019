@@ -30,8 +30,8 @@ public class Scene : MonoBehaviour
     }
 
     void OnDrawGizmos() {
-        Gizmos.color = Color.white;
+        //Gizmos.color = Color.white;
 
-        Gizmos.DrawWireCube(transform.position, camera.orthographicSize*new Vector2(1080f/100f, 720f/100f));
+        //Gizmos.DrawWireCube(transform.position, camera.orthographicSize*new Vector2(1080f/100f, 720f/100f));
     }
 }
