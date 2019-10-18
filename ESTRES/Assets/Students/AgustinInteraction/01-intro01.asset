@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 01-intro01
   m_EditorClassIdentifier: 
   context: 1
-  background: {fileID: 21300000, guid: 60af6736e51d545b88ad908da43d2ec1, type: 3}
+  background: {fileID: 21300000, guid: 2804eb2c9c7b34147ad00b2c03bac50e, type: 3}
   text: Siento que no voy a ser bueno jugando
   characterName: "Agust\xEDn"
   answers:

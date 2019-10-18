@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 02-bien01
   m_EditorClassIdentifier: 
   context: 1
-  background: {fileID: 21300000, guid: 60af6736e51d545b88ad908da43d2ec1, type: 3}
+  background: {fileID: 21300000, guid: 68b2c6fb5cb994ea5a5ebb0ecbae38bb, type: 3}
   text: "No lo s\xE9 Pedro, aparte no conozco a esos chavos que est\xE1n jugando y
     me da miedo que no me quieran juntar"
   characterName: "Agust\xEDn"
