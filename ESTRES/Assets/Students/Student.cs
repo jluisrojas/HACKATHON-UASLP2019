@@ -69,8 +69,10 @@ public class Student : MonoBehaviour
     }
 
     public void LoadDialogue() {
-        if(playerInArea && playerEntered)
+        if(playerInArea && playerEntered) {
+            GameControl.instance.movementBloqued = true;
             GameControl.instance.LoadDialogue(studentDialogue);
+        }
     }
 
     void OnDrawGizmos() {

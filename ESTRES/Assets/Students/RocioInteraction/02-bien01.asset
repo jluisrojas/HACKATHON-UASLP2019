@@ -17,8 +17,8 @@ MonoBehaviour:
   text: Caro y sus amigas me dicen de cosas y me hacen sentir triste
   characterName: "Roc\xEDo"
   answers:
-  - "Eso no est\xE1 bien, ya les dijiste algo?"
-  - Pero ella es super buena onda!
+  - "Eso no est\xE1 bien, \xBFya les dijiste algo?"
+  - "\xA1Pero ella es super buena onda!"
   answersI:
   - {fileID: 11400000, guid: fcc463e2ca423b147a91cc8023d0a2e4, type: 2}
   - {fileID: 11400000, guid: c0f0e696ec8702642b37fce24d943ae8, type: 2}

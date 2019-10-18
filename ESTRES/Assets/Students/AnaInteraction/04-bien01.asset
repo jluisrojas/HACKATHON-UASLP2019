@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: 1
   background: {fileID: 21300000, guid: cb121f10e47aa46fdac659ab8d6bd9af, type: 3}
-  text: "lo extra\xF1o mucho "
+  text: "Lo extra\xF1o mucho "
   characterName: Ana
   answers:
-  - "no lo extra\xF1es"
+  - "No lo extra\xF1es"
   - "Lo s\xE9, pero puede que sea lo mejor para los dos."
   answersI:
   - {fileID: 11400000, guid: 7b0c6e1a512066e4997628bc2c36f7a0, type: 2}

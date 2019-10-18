@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: 1
   background: {fileID: 21300000, guid: cb121f10e47aa46fdac659ab8d6bd9af, type: 3}
-  text: "Es que no quer\xEDa que nadie me viera, quer\xEDa llorar c\xF3modamente"
+  text: "Es que no quer\xEDa que nadie me viera, necesitaba llorar c\xF3modamente"
   characterName: Ana
   answers:
   - Es normal que te sientas triste tampoco hay que reprimirlo, mejor ve el lado bueno
