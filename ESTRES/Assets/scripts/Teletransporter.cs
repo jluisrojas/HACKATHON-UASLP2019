@@ -31,6 +31,7 @@ public class Teletransporter : MonoBehaviour
         }
     }
 
+    /* 
     void OnDrawGizmos() {
         Gizmos.color = Color.blue;
 
@@ -41,4 +42,5 @@ public class Teletransporter : MonoBehaviour
         else
             Gizmos.DrawCube(spawnPosition, new Vector2(cubeSize, cubeSize));
     }
+    */
 }
