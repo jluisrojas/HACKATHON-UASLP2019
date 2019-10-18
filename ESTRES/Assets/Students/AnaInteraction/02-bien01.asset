@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 02-bien01
   m_EditorClassIdentifier: 
   context: 1
-  background: {fileID: 21300000, guid: fc25a906f15c74cf5ad1014a8efb435f, type: 3}
+  background: {fileID: 21300000, guid: cb121f10e47aa46fdac659ab8d6bd9af, type: 3}
   text: "Es que no quer\xEDa que nadie me viera, quer\xEDa llorar c\xF3modamente"
   characterName: Ana
   answers:

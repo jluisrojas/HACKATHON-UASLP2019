@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 05-mal02
   m_EditorClassIdentifier: 
   context: 0
-  background: {fileID: 21300000, guid: 84fb851b20369439c808041ac70fd41d, type: 3}
+  background: {fileID: 21300000, guid: cb121f10e47aa46fdac659ab8d6bd9af, type: 3}
   text: "Ana tiene que aceptar lo que pas\xF3, si reprime sus sentimientos puede ser
     peor para ella"
   characterName: 

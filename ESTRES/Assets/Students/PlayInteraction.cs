@@ -52,10 +52,15 @@ public class PlayInteraction : MonoBehaviour
         GameControl.instance.fade.StartFade();
         yield return new WaitForSeconds(0.5f);
         if(final) {
+                Player player = GameControl.instance.player.GetComponent<Player>();
+                float percent = (float)student.level / student.gauges.Length;
+                //Debug.Log(percent);
+                int score = (int)((1.0f - percent) * 100f);
                 student.dialogueButton.SetActive(false);
                 student.gameObject.SetActive(false);
-                GameControl.instance.player.GetComponent<Player>().student = null;
-                GameControl.instance.player.GetComponent<Player>().ninosAyudados ++;
+                player.student = null;
+                player.ninosAyudados ++;
+                player.score += score;
             }
             GameControl.instance.ExitDialogue();
             this.gameObject.SetActive(false);

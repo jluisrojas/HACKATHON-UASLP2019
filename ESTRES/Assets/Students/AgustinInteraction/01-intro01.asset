@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
   m_Name: 01-intro01
   m_EditorClassIdentifier: 
-  context: 0
-  background: {fileID: 0}
+  context: 1
+  background: {fileID: 21300000, guid: 60af6736e51d545b88ad908da43d2ec1, type: 3}
   text: Siento que no voy a ser bueno jugando
   characterName: "Agust\xEDn"
   answers:

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour
 {
@@ -18,10 +19,18 @@ public class GameControl : MonoBehaviour
     [Header("Interaction Options")]
     public PlayInteraction interactionPlayer;
     public Fade fade;
+    public Text score;
+    public Text ayudado;
+    public int totalAyudar = 4;
 
     void Awake() {
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    void Update() {
+        score.text = "score: " + player.GetComponent<Player>().score;
+        ayudado.text = "Ayudado " + player.GetComponent<Player>().ninosAyudados + "/"+totalAyudar;
     }
 
     public void LoadScene(GameObject scene, int entryPoint) {
