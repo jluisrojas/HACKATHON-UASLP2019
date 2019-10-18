@@ -13,10 +13,15 @@ public class Student : MonoBehaviour
     public GameObject player;
     public TreeDialogue studentDialogue;
 
+    public Sprite[] gauges;
+    public int level;
+    public int startLevel;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        level = startLevel;
         playerInArea = false;
         playerEntered = false;
         player = GameControl.instance.player;

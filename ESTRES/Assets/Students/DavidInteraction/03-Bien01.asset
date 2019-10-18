@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
   m_Name: 03-Bien01
   m_EditorClassIdentifier: 
-  context: 0
+  context: 1
   background: {fileID: 21300000, guid: 3bdc56d420e404561836d19fb2ee4d75, type: 3}
   text: "Si, creo que tienes raz\xF3n, ya me siento algo cansado, pero \xBFQu\xE9
     puedo hacer para relajarme?"
