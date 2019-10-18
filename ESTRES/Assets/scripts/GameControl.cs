@@ -15,6 +15,7 @@ public class GameControl : MonoBehaviour
 
     [Header("Scene Options")]
     public GameObject currentScene;
+    public SoundManager sound;
 
     [Header("Interaction Options")]
     public PlayInteraction interactionPlayer;
@@ -26,6 +27,16 @@ public class GameControl : MonoBehaviour
     void Awake() {
         instance = this;
         player = GameObject.FindGameObjectWithTag("Player");
+        //sound.PlaySound(0);
+    }
+
+    public void PlaySteps() {
+        int s = currentScene.GetComponent<Scene>().clip;
+        sound.PlayLoop(s);
+    }
+
+    public void StopSteps() {
+        sound.StopLoop();
     }
 
     void Update() {
@@ -56,7 +67,8 @@ public class GameControl : MonoBehaviour
     }
 
     public void LoadDialogue(TreeDialogue dialogue) {
-        StartCoroutine(LoadDialogueCourutine(dialogue));
+        if(player.GetComponent<Player>().student != null)
+            StartCoroutine(LoadDialogueCourutine(dialogue));
         /* 
         interactionPlayer.gameObject.SetActive(true);
 
@@ -69,13 +81,14 @@ public class GameControl : MonoBehaviour
     }
 
     IEnumerator LoadDialogueCourutine(TreeDialogue dialogue) {
+        movementBloqued = true;
+        interactionMode = true;
+        
         fade.StartFade();
         yield return new WaitForSeconds(0.5f);
 
         interactionPlayer.gameObject.SetActive(true);
 
-        movementBloqued = true;
-        interactionMode = true;
 
         interactionPlayer.currentDialogue = dialogue;
         interactionPlayer.StartDialogue();

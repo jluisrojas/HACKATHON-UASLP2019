@@ -17,6 +17,7 @@ public class Scene : MonoBehaviour
     //              2
 
     public bool[] entries = new bool[4];
+    public int clip;
     public Teletransporter[] teletransporters = new Teletransporter[4];
 
     public Camera camera;

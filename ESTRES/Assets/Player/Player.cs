@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     public Student student;
 
     private Vector2 movement;
+    public bool playingAudio = false;
 
 
     // Start is called before the first frame update
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
         if(rb == null) {
             rb = this.GetComponent<Rigidbody2D>();
         }
+
     }
 
     // Metodo update
@@ -45,9 +47,21 @@ public class Player : MonoBehaviour
             GameControl.instance.player.GetComponent<AIPath>().canMove = true;
         }
 
+        if(GameControl.instance.movementBloqued) {
+            GameControl.instance.player.GetComponent<AIPath>().canMove = false;
+        }
+
         animator.SetFloat("Horizontal", path.velocity.x);
         animator.SetFloat("Vertical", path.velocity.y);
         animator.SetFloat("Speed", path.velocity.magnitude);
+
+        if(!playingAudio && path.velocity.magnitude > 0f) {
+            GameControl.instance.PlaySteps();
+            playingAudio = true;
+        } else if(playingAudio && path.velocity.magnitude == 0f) {
+            playingAudio = false;
+            GameControl.instance.StopSteps();
+        }
     }
 
     // Update para el movimiento
