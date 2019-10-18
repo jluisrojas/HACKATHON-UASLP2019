@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayInteraction : MonoBehaviour
 {
     public Image fondo;
+    public Image gauge;
     public GameObject buttonA;
     public GameObject buttonB;
     public Text pregunta;
@@ -25,16 +26,26 @@ public class PlayInteraction : MonoBehaviour
     }
 
     public void AnswerQuestion(int answer) {
-        if(currentInteraction.Assert(answer)) {
-            // Aqui hacer si contesto bien la pregunta
-        } else {
-            // Aqui si contesto mal la pregunta
+        Student student = GameControl.instance.player.GetComponent<Player>().student;
+        if(currentInteraction.context != Context.Dialogo) {
+            if(currentInteraction.Assert(answer)) {
+                if(student.level > 0) {
+                    student.level --;
+                }
+            } else {
+                if(student.level < student.gauges.Length - 1)
+                    student.level++;
+            }
         }
+        bool final = currentInteraction.final;
         currentDialogue.doAnswer(answer);
 
         SetInteraction(currentDialogue.getNext());
 
         if(currentDialogue.Finished()) {
+            if(final) {
+                student.gameObject.SetActive(false);
+            }
             GameControl.instance.ExitDialogue();
             this.gameObject.SetActive(false);
         }
@@ -43,6 +54,8 @@ public class PlayInteraction : MonoBehaviour
 
     public void SetInteraction(Interaction interaction) {
         if(interaction != null) {
+            Student student = GameControl.instance.player.GetComponent<Player>().student;
+            gauge.sprite = student.gauges[student.level];
             fondo.sprite = interaction.background;
             currentInteraction = interaction;
 

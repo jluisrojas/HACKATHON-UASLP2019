@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5f;
     public Seeker seeker;
     public Rigidbody2D rb;
+    public AIPath path;
+    public Animator animator;
 
     // Control de inteaccion
     [Header("Student interaction")]
@@ -38,6 +40,10 @@ public class Player : MonoBehaviour
             seeker.StartPath(this.transform.position,camara.ScreenToWorldPoint(Input.mousePosition));// + GameControl.instance.currentScene.transform.position);//, ArrivedDetination);
             GameControl.instance.player.GetComponent<AIPath>().canMove = true;
         }
+
+        animator.SetFloat("Horizontal", path.velocity.x);
+        animator.SetFloat("Vertical", path.velocity.y);
+        animator.SetFloat("Speed", path.velocity.magnitude);
     }
 
     // Update para el movimiento

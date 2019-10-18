@@ -13,6 +13,7 @@ public class Interaction : ScriptableObject
     public string[] answers;
     public Interaction[] answersI;
     public int rightAnswer;
+    public bool final;
     public bool Assert(int answer) {
         if(answer == rightAnswer)
             return true;
