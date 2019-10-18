@@ -10,12 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
-  m_Name: 03-al01
+  m_Name: 03-mal01
   m_EditorClassIdentifier: 
   context: 0
   background: {fileID: 0}
-  text: 
-  characterName: 
-  answers: []
-  answersI: []
+  text: "Lo intentar\xE9"
+  characterName: Ana
+  answers:
+  - Siguiente
+  answersI:
+  - {fileID: 11400000, guid: d3d1d6d90353acc4fa97cc43c0fedabf, type: 2}
   rightAnswer: 0
+  final: 0

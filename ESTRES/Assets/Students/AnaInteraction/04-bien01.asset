@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: 0
   background: {fileID: 0}
-  text: 
-  characterName: 
-  answers: []
-  answersI: []
-  rightAnswer: 0
+  text: "lo extra\xF1o mucho "
+  characterName: Ana
+  answers:
+  - "no lo extra\xF1es"
+  - "Lo s\xE9, pero puede que sea lo mejor para los dos."
+  answersI:
+  - {fileID: 11400000, guid: 7b0c6e1a512066e4997628bc2c36f7a0, type: 2}
+  - {fileID: 11400000, guid: c211e5bb33acb8b4c91b1fef4ac5cc81, type: 2}
+  rightAnswer: 1
+  final: 0

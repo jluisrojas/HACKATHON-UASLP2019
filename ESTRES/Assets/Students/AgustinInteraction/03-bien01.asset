@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: 0
   background: {fileID: 0}
-  text: 
-  characterName: 
-  answers: []
-  answersI: []
+  text: Pero tengo mucho miedo
+  characterName: "Agust\xEDn"
+  answers:
+  - "No podr\xE1s superar tus miedos si no los enfrentas, puede que los hagas tus
+    amigos "
+  - "Mejor d\xE9jalo as\xED, Agust\xEDn"
+  answersI:
+  - {fileID: 11400000, guid: 788c8c7ffa3bf2044b6bf2bd7c4877f3, type: 2}
+  - {fileID: 11400000, guid: 0a0ca563f5c113244bac6acce653ca3e, type: 2}
   rightAnswer: 0
+  final: 0

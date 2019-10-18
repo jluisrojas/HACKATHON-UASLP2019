@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: 0
   background: {fileID: 21300000, guid: 3e6e902b1cbbf4c1fbc693aeba033fe7, type: 3}
-  text: "Quiero estudiar mucho para el examen de ma\xF1ana, no pudo sacar mala nota"
+  text: "Quiero estudiar mucho para el examen de ma\xF1ana, no puedo sacar mala nota"
   characterName: David
   answers:
   - Siguiente
   answersI:
   - {fileID: 11400000, guid: 4aa677976ae644f92807ea3005b8ade6, type: 2}
   rightAnswer: 0
+  final: 0

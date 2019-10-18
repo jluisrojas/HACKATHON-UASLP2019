@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: 03-mal01
   m_EditorClassIdentifier: 
   context: 0
-  background: {fileID: 0}
-  text: 
-  characterName: 
-  answers: []
-  answersI: []
+  background: {fileID: 21300000, guid: 7e4d5a55e8e32df48b0138a8f1292603, type: 3}
+  text: Conmigo no lo es
+  characterName: "Roc\xEDo"
+  answers:
+  - Siguiente
+  answersI:
+  - {fileID: 11400000, guid: 8e426a01a4372fd4fa4e2b48c9927acd, type: 2}
   rightAnswer: 0
+  final: 0
