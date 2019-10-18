@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameControl : MonoBehaviour
 {
@@ -42,6 +43,11 @@ public class GameControl : MonoBehaviour
     void Update() {
         score.text = "score: " + player.GetComponent<Player>().score;
         ayudado.text = "Ayudado " + player.GetComponent<Player>().ninosAyudados + "/"+totalAyudar;
+
+        if(player.GetComponent<Player>().ninosAyudados == totalAyudar) {
+            PlayerPrefs.SetInt("Score", player.GetComponent<Player>().score);
+            SceneManager.LoadScene(2);
+        }
     }
 
     public void LoadScene(GameObject scene, int entryPoint) {
@@ -83,7 +89,7 @@ public class GameControl : MonoBehaviour
     IEnumerator LoadDialogueCourutine(TreeDialogue dialogue) {
         movementBloqued = true;
         interactionMode = true;
-        
+
         fade.StartFade();
         yield return new WaitForSeconds(0.5f);
 
