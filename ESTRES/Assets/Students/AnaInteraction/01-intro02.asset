@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
   m_Name: 01-intro02
   m_EditorClassIdentifier: 
-  context: 0
-  background: {fileID: 0}
+  context: 1
+  background: {fileID: 21300000, guid: 223d34968ba8f4e7a8abd86f7ef60470, type: 3}
   text: "Mi novio me cort\xF3 Pedro, me siento muy mal "
   characterName: Ana
   answers:

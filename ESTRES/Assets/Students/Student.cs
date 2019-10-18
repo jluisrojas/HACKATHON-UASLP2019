@@ -17,7 +17,7 @@ public class Student : MonoBehaviour
     public int level;
     public int startLevel;
 
-    public int score;
+    public GameObject dialogueButton;
 
 
     // Start is called before the first frame update
@@ -49,12 +49,16 @@ public class Student : MonoBehaviour
                     playerInArea = true;
                     if(!playerEntered && player.GetComponent<AIPath>().velocity == Vector3.zero) {
                         if(!GameControl.instance.movementBloqued) {
-                            GameControl.instance.LoadDialogue(studentDialogue);
+                            //GameControl.instance.LoadDialogue(studentDialogue);
                             playerEntered = true;
+                            dialogueButton.SetActive(true);
+                            player.GetComponent<Player>().student = this;
                         }
                     }
                 } else {
-                    player.GetComponent<Player>().student = null;
+                    dialogueButton.SetActive(false);
+                    if(player.GetComponent<Player>().student == this)
+                        player.GetComponent<Player>().student = null;
                     playerInArea = false;
                     playerEntered = false;
                 }
@@ -62,6 +66,11 @@ public class Student : MonoBehaviour
 
             yield return new WaitForSeconds(0.5f);
         }
+    }
+
+    public void LoadDialogue() {
+        if(playerInArea && playerEntered)
+            GameControl.instance.LoadDialogue(studentDialogue);
     }
 
     void OnDrawGizmos() {

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 03-mal01
   m_EditorClassIdentifier: 
   context: 0
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 84fb851b20369439c808041ac70fd41d, type: 3}
   text: "Lo intentar\xE9"
   characterName: Ana
   answers:
