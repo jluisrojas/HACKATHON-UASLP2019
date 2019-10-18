@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 02-mal02
   m_EditorClassIdentifier: 
   context: 0
-  background: {fileID: 0}
+  background: {fileID: 21300000, guid: 288cdff09896e424c98dbbe181846341, type: 3}
   text: "Creo que es mejor tener m\xE1s contacto con Ana, est\xE1 pasando por un mal
     momento."
   characterName: 

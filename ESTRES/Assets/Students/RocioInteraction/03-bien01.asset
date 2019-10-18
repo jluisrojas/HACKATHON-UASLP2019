@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
   m_Name: 03-bien01
   m_EditorClassIdentifier: 
-  context: 0
+  context: 2
   background: {fileID: 21300000, guid: 3ab91ba2f3439d74998aa556aed044bb, type: 3}
   text: "S\xED, pero solo se r\xEDen m\xE1s de m\xED"
   characterName: "Roc\xEDo"

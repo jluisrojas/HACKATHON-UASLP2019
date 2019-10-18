@@ -43,40 +43,51 @@ public class PlayInteraction : MonoBehaviour
         SetInteraction(currentDialogue.getNext());
 
         if(currentDialogue.Finished()) {
-            if(final) {
+            StartCoroutine(ExitDialogueCourutine(student, final));
+        }
+
+    }
+
+    IEnumerator ExitDialogueCourutine(Student student, bool final) {
+        GameControl.instance.fade.StartFade();
+        yield return new WaitForSeconds(0.5f);
+        if(final) {
+                student.dialogueButton.SetActive(false);
                 student.gameObject.SetActive(false);
+                GameControl.instance.player.GetComponent<Player>().student = null;
+                GameControl.instance.player.GetComponent<Player>().ninosAyudados ++;
             }
             GameControl.instance.ExitDialogue();
             this.gameObject.SetActive(false);
-        }
-
     }
 
     public void SetInteraction(Interaction interaction) {
         if(interaction != null) {
             Student student = GameControl.instance.player.GetComponent<Player>().student;
-            gauge.sprite = student.gauges[student.level];
-            fondo.sprite = interaction.background;
-            currentInteraction = interaction;
+            if(student != null) {
+                gauge.sprite = student.gauges[student.level];
+                fondo.sprite = interaction.background;
+                currentInteraction = interaction;
 
-            pregunta.text = interaction.text;
-            characterName.text = interaction.characterName;
+                pregunta.text = interaction.text;
+                characterName.text = interaction.characterName;
 
-            // Setup the botones
-            if(interaction.answers.Length == 1) {
-                buttonB.SetActive(false);
-            } else {
-                buttonB.SetActive(true);
-            }
+                // Setup the botones
+                if(interaction.answers.Length == 1) {
+                    buttonB.SetActive(false);
+                } else {
+                    buttonB.SetActive(true);
+                }
 
-            for(int i = 0; i < interaction.answers.Length; i++) {
-                GameObject button;
-                if(i == 0)
-                    button = buttonA;
-                else
-                    button = buttonB;
+                for(int i = 0; i < interaction.answers.Length; i++) {
+                    GameObject button;
+                    if(i == 0)
+                        button = buttonA;
+                    else
+                        button = buttonB;
 
-                button.GetComponentInChildren<Text>().text = interaction.answers[i];
+                    button.GetComponentInChildren<Text>().text = interaction.answers[i];
+                }
             }
         }
     }

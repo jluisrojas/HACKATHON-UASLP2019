@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Pathfinding;
 
 public enum Context {
@@ -11,6 +12,8 @@ public enum Context {
 
 public class Player : MonoBehaviour
 {
+    public int score;
+    public int ninosAyudados;
     public float moveSpeed = 5f;
     public Seeker seeker;
     public Rigidbody2D rb;
@@ -22,6 +25,7 @@ public class Player : MonoBehaviour
     public Student student;
 
     private Vector2 movement;
+
 
     // Start is called before the first frame update
     void Start()
