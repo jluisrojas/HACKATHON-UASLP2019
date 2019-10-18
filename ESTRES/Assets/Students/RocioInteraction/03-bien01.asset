@@ -17,7 +17,7 @@ MonoBehaviour:
   text: "S\xED, pero solo se r\xEDen m\xE1s de m\xED"
   characterName: "Roc\xEDo"
   answers:
-  - Debes de enfrentarla
+  - "\xA1Debes de enfrentarla!"
   - Debes de decirle a la maestra
   answersI:
   - {fileID: 11400000, guid: 9f39a388226dc824ebf3949840d13546, type: 2}

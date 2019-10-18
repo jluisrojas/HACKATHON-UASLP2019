@@ -15,10 +15,10 @@ MonoBehaviour:
   context: 1
   background: {fileID: 21300000, guid: 60af6736e51d545b88ad908da43d2ec1, type: 3}
   text: "No lo s\xE9 Pedro, aparte no conozco a esos chavos que est\xE1n jugando y
-    me da miedo que no me quieran juntar."
+    me da miedo que no me quieran juntar"
   characterName: "Agust\xEDn"
   answers:
-  - "Yo digo que si te juntan Agust\xEDn, solo hay que intentarlo."
+  - "Yo digo que si te juntan Agust\xEDn, solo hay que intentarlo"
   - "Tienes raz\xF3n, no se ven muy amigables"
   answersI:
   - {fileID: 11400000, guid: 3bf47ef82c6bf224a91647fc5a73342b, type: 2}

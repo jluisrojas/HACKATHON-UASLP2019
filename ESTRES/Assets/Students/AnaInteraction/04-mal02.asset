@@ -15,7 +15,7 @@ MonoBehaviour:
   context: 0
   background: {fileID: 21300000, guid: cb121f10e47aa46fdac659ab8d6bd9af, type: 3}
   text: Esas no parecen ser palabras muy alentadoras, podemos probar otra cosa para
-    hacer sentir mejor a Ana.
+    hacer sentir mejor a Ana
   characterName: 
   answers:
   - Salir

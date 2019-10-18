@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: 2
   background: {fileID: 21300000, guid: 4d97d3f06dabe704596a87ca2c84f87b, type: 3}
-  text: no quiero, me tratan muy feo
+  text: No quiero, me tratan muy feo
   characterName: "Roc\xEDo"
   answers:
-  - "Entonces mejor quedate aqu\xED"
-  - "\xBFQuien te trata feo?"
+  - "Entonces mejor qu\xE9date aqu\xED"
+  - "\xBFQui\xE9n te trata feo?"
   answersI:
   - {fileID: 11400000, guid: c81277b5803ceab49ad1993e164c782c, type: 2}
   - {fileID: 11400000, guid: b77337f71df889f42a7e5c690706f493, type: 2}

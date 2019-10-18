@@ -17,7 +17,7 @@ MonoBehaviour:
   text: Siento que no voy a ser bueno jugando
   characterName: "Agust\xEDn"
   answers:
-  - "\xBFPorque no lo intentas? No sabr\xE1s si eres bueno si no lo haces"
+  - "\xBFPor qu\xE9 no lo intentas? No sabr\xE1s si eres bueno si no lo haces"
   - Si, no debes ser bueno jugando
   answersI:
   - {fileID: 11400000, guid: b33665c530b53a44887b510443222361, type: 2}

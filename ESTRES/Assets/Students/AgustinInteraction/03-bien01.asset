@@ -18,7 +18,7 @@ MonoBehaviour:
   characterName: "Agust\xEDn"
   answers:
   - "No podr\xE1s superar tus miedos si no los enfrentas, puede que los hagas tus
-    amigos "
+    amigos"
   - "Mejor d\xE9jalo as\xED, Agust\xEDn"
   answersI:
   - {fileID: 11400000, guid: 788c8c7ffa3bf2044b6bf2bd7c4877f3, type: 2}

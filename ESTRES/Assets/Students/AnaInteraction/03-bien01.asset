@@ -17,9 +17,9 @@ MonoBehaviour:
   text: "Si, pero no s\xE9, es dif\xEDcil superarlo."
   characterName: Ana
   answers:
-  - tampoco dejes que te afecte mucho, tienes que mantenerte activa para dejar de
+  - Tampoco dejes que te afecte mucho, tienes que mantenerte activa para dejar de
     pensar en eso, distraerte un poco y volver a encontrarte.
-  - "Pero tendr\xE1s que hacerlo tarde o temprano."
+  - "Pero tendr\xE1s que hacerlo tarde o temprano"
   answersI:
   - {fileID: 11400000, guid: 1762f3f93b485dc4b884d747c06b14e2, type: 2}
   - {fileID: 11400000, guid: 3e300f451fd4cbf4fb91ca11742bd913, type: 2}

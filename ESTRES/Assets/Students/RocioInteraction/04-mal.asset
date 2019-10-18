@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: 0
   background: {fileID: 21300000, guid: bd3f8f705e4cd8746a34a704d256bd3b, type: 3}
-  text: No se si tenga la suficiente fuerza
+  text: "No s\xE9 si tenga la suficiente fuerza"
   characterName: "Roc\xEDo"
   answers:
   - Siguiente
   answersI:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 6e62f74bbed18174f8fc75df3af309b9, type: 2}
   rightAnswer: 0
   final: 0
