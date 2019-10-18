@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: 0
   background: {fileID: 0}
-  text: 
-  characterName: 
-  answers: []
-  answersI: []
-  rightAnswer: 0
+  text: "Mi novio me cort\xF3 Pedro, me siento muy mal "
+  characterName: Ana
+  answers:
+  - "Pues debi\xF3 tener sus razones"
+  - "Lo siento mucho, no creo que sea bueno que est\xE9s aqu\xED atr\xE1s"
+  answersI:
+  - {fileID: 11400000, guid: c6b6cdf487a2224419f79d181825909c, type: 2}
+  - {fileID: 11400000, guid: 5c40c0a148b9342468418ead8e52aa1a, type: 2}
+  rightAnswer: 1
+  final: 0

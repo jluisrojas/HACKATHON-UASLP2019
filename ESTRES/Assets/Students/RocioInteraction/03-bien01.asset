@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: 03-bien01
   m_EditorClassIdentifier: 
   context: 0
-  background: {fileID: 0}
-  text: 
-  characterName: 
-  answers: []
-  answersI: []
-  rightAnswer: 0
+  background: {fileID: 21300000, guid: 3ab91ba2f3439d74998aa556aed044bb, type: 3}
+  text: "S\xED, pero solo se r\xEDen m\xE1s de m\xED"
+  characterName: "Roc\xEDo"
+  answers:
+  - Debes de enfrentarla
+  - Debes de decirle a la maestra
+  answersI:
+  - {fileID: 11400000, guid: 9f39a388226dc824ebf3949840d13546, type: 2}
+  - {fileID: 11400000, guid: 79d8b06810658b94baaa7148af4f37ed, type: 2}
+  rightAnswer: 1
+  final: 0

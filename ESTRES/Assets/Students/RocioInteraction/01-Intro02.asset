@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630e3140fd87e41a8b88449d06437b7a, type: 3}
   m_Name: 01-Intro02
   m_EditorClassIdentifier: 
-  context: 0
-  background: {fileID: 0}
-  text: siento que no voy a ser bueno jugando
-  characterName: Agustin
+  context: 2
+  background: {fileID: 21300000, guid: 4d97d3f06dabe704596a87ca2c84f87b, type: 3}
+  text: no quiero, me tratan muy feo
+  characterName: "Roc\xEDo"
   answers:
-  - Si, no debes ser bueno jugando
-  - porque no lo intentas
+  - "Entonces mejor quedate aqu\xED"
+  - "\xBFQuien te trata feo?"
   answersI:
-  - {fileID: 0}
-  rightAnswer: 0
+  - {fileID: 11400000, guid: c81277b5803ceab49ad1993e164c782c, type: 2}
+  - {fileID: 11400000, guid: b77337f71df889f42a7e5c690706f493, type: 2}
+  rightAnswer: 1
+  final: 0

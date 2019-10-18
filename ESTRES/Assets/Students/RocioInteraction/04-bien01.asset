@@ -13,9 +13,14 @@ MonoBehaviour:
   m_Name: 04-bien01
   m_EditorClassIdentifier: 
   context: 0
-  background: {fileID: 0}
-  text: 
-  characterName: 
-  answers: []
-  answersI: []
-  rightAnswer: 0
+  background: {fileID: 21300000, guid: 4d97d3f06dabe704596a87ca2c84f87b, type: 3}
+  text: "No Pedro, y si ella tambi\xE9n se burla de m\xED?"
+  characterName: "Roc\xEDo"
+  answers:
+  - "Tienes raz\xF3n, mejor qu\xE9date callada"
+  - "No Roc\xEDo, ella es muy buena y te va a ayudar a que ya no se burlen de ti."
+  answersI:
+  - {fileID: 11400000, guid: 7e520350119170f4f84330023dd0aa54, type: 2}
+  - {fileID: 11400000, guid: 15b17b01a18dc914787ce681a0412e54, type: 2}
+  rightAnswer: 1
+  final: 0
