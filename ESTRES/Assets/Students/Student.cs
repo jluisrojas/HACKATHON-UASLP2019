@@ -43,7 +43,7 @@ public class Student : MonoBehaviour
     IEnumerator UpdateStatus() {
         while(true) {
             if(!GameControl.instance.interactionMode) {
-                //GameControl.instance.debug.text = player.transform.position.ToString();
+                // GameControl.instance.debug.text = player.transform.position.ToString();
                 if(Vector2.Distance(this.transform.position, player.transform.position) <= interactionArea) {
                     player.GetComponent<Player>().student = this;
                     playerInArea = true;
