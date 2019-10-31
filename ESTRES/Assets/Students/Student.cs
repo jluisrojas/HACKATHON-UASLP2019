@@ -33,17 +33,17 @@ public class Student : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(!GameControl.instance.interactionMode && playerInArea && Input.GetKeyDown(KeyCode.Space)) {
-            //GameControl.instance.LoadDialogue(studentDialogue);
-        //}
+        if(!GameControl.instance.interactionMode && playerInArea && Input.GetKeyDown(KeyCode.Space)) {
+            GameControl.instance.LoadDialogue(studentDialogue);
+        }
     }
 
     // Se utiliza un courutina para no forzar tanto al CPU en el update
     // el update lo hace cada 0.5 segundos
     IEnumerator UpdateStatus() {
         while(true) {
-
             if(!GameControl.instance.interactionMode) {
+                //GameControl.instance.debug.text = player.transform.position.ToString();
                 if(Vector2.Distance(this.transform.position, player.transform.position) <= interactionArea) {
                     player.GetComponent<Player>().student = this;
                     playerInArea = true;
@@ -56,11 +56,14 @@ public class Student : MonoBehaviour
                         }
                     }
                 } else {
-                    dialogueButton.SetActive(false);
-                    if(player.GetComponent<Player>().student == this)
-                        player.GetComponent<Player>().student = null;
-                    playerInArea = false;
-                    playerEntered = false;
+                    if(player != null) {
+                        Debug.Log(player.GetComponent<Player>().student);
+                        dialogueButton.SetActive(false);
+                        if(player.GetComponent<Player>().student == this)
+                            player.GetComponent<Player>().student = null;
+                        playerInArea = false;
+                        playerEntered = false;
+                    }
                 }
             }
 

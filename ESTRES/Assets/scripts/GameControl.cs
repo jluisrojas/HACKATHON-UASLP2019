@@ -23,11 +23,12 @@ public class GameControl : MonoBehaviour
     public Fade fade;
     public Text score;
     public Text ayudado;
+    public Text debug;
     public int totalAyudar = 4;
 
     void Awake() {
         instance = this;
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
         //sound.PlaySound(0);
     }
 
